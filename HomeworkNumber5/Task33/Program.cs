@@ -2,11 +2,11 @@
 Console.Write("Введите длину массива: ");
 int maslenght = Convert.ToInt32(Console.ReadLine());
 int [] masran = new int [maslenght];
+for (int i = 0; i < masran.Length; i++){
+    masran[i]  = new Random().Next(1,11);
+}
 masrandom(masran);
 void masrandom (int [] n1){
-    for (int i = 0; i < n1.Length; i++){
-        n1[i]  = new Random().Next(1,11);
-    }
     Console.Write("Введите число, которое нужно найти в массиве: ");
     int search = Convert.ToInt32(Console.ReadLine());
     int searchcount = 0;
